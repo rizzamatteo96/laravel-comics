@@ -65,7 +65,7 @@ main .content {
 }
 main .content .container {
   position: relative;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 main .content .container .section-title,
 main .content .container .view-more {

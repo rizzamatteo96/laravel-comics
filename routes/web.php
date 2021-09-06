@@ -14,53 +14,56 @@ use Illuminate\Support\Facades\Route;
 */
 // route per home page
 Route::get('/', function () {
-    return view('home');
+  return view('home');
 })->name('home-page');
 
 // route per comics page
 Route::get('/comics', function () {
 
-    $data = ['cardsData' => config('comics')];
+	$data = [
+		'cardsData' => config('comics'),
+		'shopItems' => config('shop')
+	];
 
-    return view('comics', $data);
+	return view('comics', $data);
 })->name('comics-page');
 
 // route per movies page
 Route::get('/movies', function () {
-    return view('movies');
+	return view('movies');
 })->name('movies-page');
 
 // route per tv page
 Route::get('/tv', function () {
-    return view('tv');
+	return view('tv');
 })->name('tv-page');
 
 // route per games page
 Route::get('/games', function () {
-    return view('games');
+	return view('games');
 })->name('games-page');
 
 // route per collectibles page
 Route::get('/collectibles', function () {
-    return view('collectibles');
+	return view('collectibles');
 })->name('collectibles-page');
 
 // route per videos page
 Route::get('/videos', function () {
-    return view('videos');
+	return view('videos');
 })->name('videos-page');
 
 // route per fans page
 Route::get('/fans', function () {
-    return view('fans');
+	return view('fans');
 })->name('fans-page');
 
 // route per news page
 Route::get('/news', function () {
-    return view('news');
+	return view('news');
 })->name('news-page');
 
 // route per shop page
 Route::get('/shop', function () {
-    return view('shop');
+	return view('shop');
 })->name('shop-page');

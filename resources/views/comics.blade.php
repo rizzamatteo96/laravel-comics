@@ -26,15 +26,18 @@
     </div>
   </div>
   
-  {{-- <div class="items-shop">
+  <div class="items-shop">
     <div class="container">
     <ul>
-      <li v-for="(item,i) in items" :key="i">
-        <img :src="getImgUrl(item.img)" :alt="item.alt">
-        <span> {{item.text}} </span>
+      @foreach ($shopItems as $item)
+      <li>
+        <img src="{{asset('img/' . $item['img'])}}" alt="{{asset($item['alt'])}}">
+        <span> {{$item['text']}} </span>
       </li>
+          
+      @endforeach
     </ul>
     </div>
-  </div> --}}
+  </div>
 </main>
 @endsection
