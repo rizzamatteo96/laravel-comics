@@ -56,6 +56,69 @@ header .jumbo {
   background-size: cover;
 }
 
+main .content,
+main .items-shop {
+  color: white;
+}
+main .content {
+  background-color: #1c1c1c;
+}
+main .content .container {
+  position: relative;
+  padding-bottom: 40px;
+}
+main .content .container .section-title,
+main .content .container .view-more {
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #0282f9;
+}
+main .content .container .section-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+main .content .container .card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .content .container .card-section .card {
+  width: calc((100% - (10px * 6))/6);
+  margin: 40px 0;
+}
+main .content .container .card-section .card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+main .content .container .view-more {
+  display: block;
+  margin: 0 auto;
+  color: white;
+}
+main .items-shop {
+  padding: 40px 0;
+  background-color: #0282f9;
+}
+main .items-shop ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+main .items-shop ul li {
+  display: inline-block;
+}
+main .items-shop ul li img {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 footer ul {
   list-style: none;
 }
