@@ -9,22 +9,17 @@
   margin: 0 auto;
 }
 
-header {
+header .container {
   height: 100px;
   padding: 10px 0;
-}
-
-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-
 header .container img {
   height: 100%;
 }
-
 header .container ul {
   list-style: none;
   text-transform: uppercase;
@@ -33,13 +28,11 @@ header .container ul {
   vertical-align: middle;
   line-height: 100px;
 }
-
 header .container ul li {
   display: inline-block;
   position: relative;
   padding: 0 10px;
 }
-
 header .container ul li.active ::after {
   content: "";
   background-color: #0282f9;
@@ -50,55 +43,49 @@ header .container ul li.active ::after {
   right: 0;
   height: 5px;
 }
-
-header .container ul li:hover a,
-header .container ul li.active a {
+header .container ul li:hover a, header .container ul li.active a {
   color: #0282f9;
 }
-
 header .container ul li a {
   text-decoration: none;
   color: black;
+}
+header .jumbo {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
 }
 
 footer ul {
   list-style: none;
 }
-
 footer ul li a {
   text-decoration: none;
 }
-
 footer .top {
   background-position: center;
   background-size: cover;
   height: 400px;
   color: white;
 }
-
 footer .top .container {
   height: 100%;
 }
-
 footer .top .container .col {
   float: left;
   margin-right: 20px;
   padding: 40px 0;
 }
-
 footer .top .container .col h3 {
   margin: 15px 0;
   text-transform: uppercase;
 }
-
 footer .top .container .col ul li {
   padding-top: 5px;
 }
-
 footer .top .container .col ul li a {
   color: gray;
 }
-
 footer .top .container .col-logo {
   float: right;
   height: 100%;
@@ -106,24 +93,20 @@ footer .top .container .col-logo {
   background-size: cover;
   background-position: center;
 }
-
 footer .top ::after {
   content: "";
   display: table;
   clear: both;
 }
-
 footer .bottom {
   background-color: #303030;
   padding: 40px 0;
 }
-
 footer .bottom .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 footer .bottom .container button {
   padding: 10px 15px;
   border-radius: 0;
@@ -134,7 +117,6 @@ footer .bottom .container button {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
 footer .bottom .container a.follow {
   color: #0282f9;
   text-transform: uppercase;
@@ -143,14 +125,11 @@ footer .bottom .container a.follow {
   padding-right: 15px;
   vertical-align: middle;
 }
-
 footer .bottom .container ul li {
   display: inline-block;
   padding: 0 5px;
 }
-
 footer .bottom .container ul li img {
   vertical-align: middle;
   height: 2rem;
 }
-

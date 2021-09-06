@@ -1,56 +1,61 @@
 header{
+  .container{
     height: 100px;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 
-    .container{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    img{
       height: 100%;
-
-      img{
-        height: 100%;
-      }
-    
-      ul{
-        list-style: none;
-        text-transform: uppercase;
-        height: 100%;
+    }
+  
+    ul{
+      list-style: none;
+      text-transform: uppercase;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 100px;
+  
+      li{
         display: inline-block;
-        vertical-align: middle;
-        line-height: 100px;
-    
-        li{
-          display: inline-block;
-          position: relative;
-          padding: 0 10px;
-          // height: 100%;
+        position: relative;
+        padding: 0 10px;
+        // height: 100%;
 
-          &.active{
-            ::after{
-              content: '';
-              background-color: $dc-color;
-              display: block;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              height: 5px;
-            }
+        &.active{
+          ::after{
+            content: '';
+            background-color: $dc-color;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
           }
+        }
 
-          &:hover,
-          &.active{
-            a{
-              color: $dc-color;
-            }
-          }
-          
+        &:hover,
+        &.active{
           a{
-            text-decoration: none;
-            color: black;
+            color: $dc-color;
           }
+        }
+        
+        a{
+          text-decoration: none;
+          color: black;
         }
       }
     }
   }
+
+  .jumbo{
+    height: 400px;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+  }
+}

@@ -20,6 +20,10 @@
       </ul>
     </nav>
     <!-- fine navbar -->
-
   </div>
+
+  <!-- inizio jumbotron -->
+  <div class="jumbo"></div>
+  <!-- fine jumbotron -->
+
 </header>
