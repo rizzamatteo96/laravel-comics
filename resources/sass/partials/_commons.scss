@@ -1,10 +1,12 @@
+$dc-color : #0282f9;
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.container {
-    max-width: 1170 px;
-    margin: auto;
+.container{
+  width: 70%;
+  margin: 0 auto;
 }
