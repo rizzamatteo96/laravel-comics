@@ -19,7 +19,10 @@ Route::get('/', function () {
 
 // route per comics page
 Route::get('/comics', function () {
-    return view('comics');
+
+    $data = ['cardsData' => config('comics')];
+
+    return view('comics', $data);
 })->name('comics-page');
 
 // route per movies page
